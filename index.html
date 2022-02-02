@@ -1,0 +1,79 @@
+<html>
+<title>Jenis Kucing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<img src="bannr.jpeg" width=100% height=60%>
+
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openKota('Kucing')">Kucing</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Persia')">Persia</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('British')">British</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Himalaya')">Himalaya</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bengal')">Bengal</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+</div>
+
+<div id="Home" class="w3-container kota w3-animate-top" style="">
+ <center>
+ <h1>Jenis-Jenis Kucing </h1>
+ <hr>
+ <h2>Kucing Lucu</h2>
+ <img src="kucing2.jpg" style="width: 60%; height: 40%">
+</div>
+
+<div id="Kucing" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Kucing</h2>
+ <p>Kucing adalah hewan peliharaan yang banyak sekali diminati oleh orang - orang yang memang dari penampilan fisik yang ukuranya kecil, berbulu, manja dan imut.</p>
+ <img src="kucing1.jpg" style="width: 80%; height: 60%">
+</div>
+
+<div id="Persia" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>Kucing Persia</h2>
+ <p>Kucing persia adalah ras kucing domestik berbulu panjang dengan karakter wajah bulat dan moncong pendek</p>
+ <img src="persia.jpg" style="width: 80%; height: 60%">
+</div>
+
+<div id="British" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>Kucing British Short Hair</h2>
+ <p>British shorthair adalah ras kucing Inggris tertua. 
+ Kucing ini dipercaya merupakan keturunan kucing Roma kuno, yang dibawa ke Inggris selama masa invasi. </p>
+ <img src="britis.jfif" style="width: 80%; height: 60%">
+</div>
+
+<div id="Himalaya" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>Kucing Himalaya</h2>
+ <p>Kucing himalaya atau kucing persia himalaya (dahulu bernama kucing persia warna poin) 
+ adalah salah satu ras kucing domestik yang merupakan hasil persilangan antara kucing persia dengan kucing siam.</p>
+ <img src="himalaya.jfif" style="width: 80%; height: 60%">
+</div>
+
+<div id="Bengal" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Kucing Bengal</h2>
+ <p>Kucing bengal adalah keturunan keempat dari hasil persilangan antara kucing american shorthair dengan kucing asian leopard.</p>
+ <img src="bengal.jfif" style="width: 80%; height: 60%">
+</div>
+
+<div id="Profile" class="w3-container kota w3-animate-left" style="display:none">
+  <h2>Profile</h2>
+  <p>Nama  : Yulia Anggiani</p>
+  <p>TTL   : Purwakarta,10 Juli 2003 </p>
+  <p>Hobby : Travelling</p>
+  <p>NIM   : 10121044</p>
+  <p>Kelas : IF 2</p>
+  <img src="yuli.jpeg" style="width: 50%; height: 80%">
+ </div>
+
+<script>
+function openKota(namaKota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaKota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
